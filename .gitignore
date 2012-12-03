@@ -1,6 +1,57 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+{
+"name": "Knight",
+"nolynch": true,
+"sides": [Knights]
+{
+"name": "Warrior",
+"nolynch": true,
+"sides": [Warriors]
+{
+"side": "1",
+"translation": "Knights"
+},
+{
+"side": "2",
+"translation": "Warriors"
+},
+],
+"roles": [
+        {
+            "role": "1",
+            "translation": "Knight",
+            "side": "1",
+            "help": "You are a Knight , You must help your friends to win the battle type /kill to kill someone , d'ont kill your friends, and you can kill and the day and in the Night ",
+            "actions": {
+                "night": {
+                   "Day": {
+                        "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 1
+                    }
+                },
+  	"vote": 0
+            }
+        },
+        {
+            "role": "2",
+            "translation": "Warriors",
+            "side": "2",
+            "help": "You are a Warrior , You must help your friends to win the battle type /kill to kill someone , d'ont kill your friends and you can kill and the day and in the Night",
+            "actions": {
+                "night": {
+                   "Day": {
+                        "kill": {
+                        "target": "AnyButSelf",
+                        "common": "Self",
+                        "priority": 1                    }
+                },
+		"vote": 0
+            }
+        },
+ ],
+"roles1": [
+"1",
+"2",
+]
+}
